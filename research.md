@@ -4,6 +4,7 @@ https://www.youtube.com/watch?v=9Uzl0vYzYV8&t=47s
 drei verschiedene arten wie man den Würfel drehen kann
 
 
+
 single arm:
     https://www.youtube.com/watch?v=v5xauyTVj3w
     2.4.2025
