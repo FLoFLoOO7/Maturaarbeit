@@ -22,3 +22,13 @@ scanning arten
     https://www.youtube.com/watch?v=_cl2Wur8waY
     2.4.2025
     scanner ist von oben und von der seite
+
+
+
+1. mit 2 gelenken, um die halterung horizontal zu behalten
+2. verschiedene greiffarm arten--> singel arm & double arm
+    - double arm: 
+    Probleme:
+    * Zauberwürfel aus der halterung gefallen
+    * nicht fertig gedreht
+    * nicht stabil ge
