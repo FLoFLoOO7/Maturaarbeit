@@ -14,28 +14,33 @@ from random import *
 
 # Create your objects here.
 ev3 = EV3Brick()
-motoro=Motor(Port.A)
+motor_color=Motor(Port.s4)
+ColorSensor=ColorSensor(Port.s1)
 
-motoro_left=Motor(Port.C)
+
+#motoro=Motor(Port.A)
+
+#motoro_left=Motor(Port.C)
 #motoro.run_angle(100,360)
 #motoro_left.run_angle(1000,-160)
+motor_color.run_angle(1000,90)
 c=0
 d=0
 done=True
-while c<=100:
-    motoro_left.run_angle(1000,140)
-    motoro_left.run_angle(1000,-140)
-    a=randint(0,20)
-    if a<10:
-        if a<10:
-            k=180
-        else:
-            k=90
-        motoro.run_angle(1000,k)
-    c+=1
+#while c<=100:
+#    motoro_left.run_angle(1000,140)
+#    motoro_left.run_angle(1000,-140)
+#    a=randint(0,20)
+#    if a<10:
+#        if a<10:
+#            k=180
+#        else:
+#            k=90
+#        motoro.run_angle(1000,k)
+#    c+=1
     
 
-print(motoro_left.angle())
+#print(motoro_left.angle())
 
 i=0
 #while i<=45:

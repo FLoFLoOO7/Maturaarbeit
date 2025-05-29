@@ -22,7 +22,8 @@ scanning arten
     https://www.youtube.com/watch?v=_cl2Wur8waY
     2.4.2025
     scanner ist von oben und von der seite
-
+docs:
+    https://mindcuber.com/mindcub3r/mindcub3r.html
 
 
 1. mit 2 gelenken, um die halterung horizontal zu behalten
@@ -31,4 +32,4 @@ scanning arten
     Probleme:
     * Zauberwürfel aus der halterung gefallen
     * nicht fertig gedreht
-    * nicht stabil ge
+    * nicht stabil genug
