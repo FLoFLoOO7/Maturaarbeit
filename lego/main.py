@@ -16,8 +16,8 @@ c=0
 d=0
 done=True
 while c<=100:
-    motoro_left.run_angle(1000,160)
-    motoro_left.run_angle(1000,-160)
+    motoro_left.run_angle(1000,180)
+    motoro_left.run_angle(1000,-180)
     a=random.randint(0,20)
     if a<10:
         if a<10:
