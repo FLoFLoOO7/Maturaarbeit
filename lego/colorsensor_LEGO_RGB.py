@@ -16,18 +16,17 @@ mootor_color.reset_angle(0)
 motoro_left.reset_angle(0)
 motoro.reset_angle(0)
 
-cube_faces = []                   # Liste aller gescannten Seiten
+cube_faces = []                  
 
-for side_num in range(6):         # =1, solange du nur eine Seite scannst
+for side_num in range(6):        
     
     current_face = [None] * 9     # Platz für 9 RGB-Werte
 
-    # Würfelseite in Position bringen
     motoro_left.run_angle(800, 180)
     wait(300)
     ev3.speaker.beep()
 
-    # --- Mitte scannen ---
+    #  Mitte scannen 
     mootor_color.run_angle(1000, -380)   # Sensor nach innen
     wait(300)
     middle_rgb = color_sensor.rgb()      # (R, G, B) – Werte 0-1023
@@ -36,15 +35,23 @@ for side_num in range(6):         # =1, solange du nur eine Seite scannst
     mootor_color.run_angle(1000, 150)    # Sensor zurück
     wait(300)
 
-    # --- Randfelder scannen ---
+    # Randfelder scannen 
     for i in range(8):
         rgb = color_sensor.rgb()
-        index = i if i < 4 else i + 1    # Position im 3×3-Raster
+        if i==4 or i==3 or i==9:# jou hie muesi no mache dases richtig scannt
+            if i==4:
+                index=i
+            else:
+                i=1
+        else:
+            index=i=i+1
+        
+        
         current_face[index] = rgb
         ev3.speaker.beep()
         wait(300)
 
-        motoro.run_angle(800, 45)        # Würfel 45 ° weiterdrehen
+        motoro.run_angle(800, 45)        
         wait(300)
 
     cube_faces.append(current_face)
@@ -62,5 +69,4 @@ for side_num in range(6):         # =1, solange du nur eine Seite scannst
         motoro_left.run_angle(1000,-180)
     wait(500)
 
-# Alle gesammelten RGB-Werte ausgeben
 print(cube_faces)
