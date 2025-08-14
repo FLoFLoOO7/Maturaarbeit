@@ -38,14 +38,22 @@ for side_num in range(6):
     # Randfelder scannen 
     for i in range(8):
         rgb = color_sensor.rgb()
-        if i==4 or i==3 or i==9:# jou hie muesi no mache dases richtig scannt
-            if i==4:
-                index=i
-            else:
-                i=1
+        if i==0:
+            index=1
+        elif i==1:
+            index=2
+        elif i==2:
+            index=5
+        elif i==3:
+            index=8
+        elif i==4:
+            index=7
+        elif i ==5:
+            index=6
+        elif i==6:
+            index=3
         else:
-            index=i=i+1
-        
+            index=0     
         
         current_face[index] = rgb
         ev3.speaker.beep()
