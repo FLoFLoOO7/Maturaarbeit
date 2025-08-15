@@ -318,7 +318,7 @@ def kreuz_V3(x):
         else:
             break  # Alle Kanten sind korrekt
 
-    return moves
+    return moves,x
 print(x)
 kreuz_V3(x)
 print(x)
