@@ -20,6 +20,15 @@ motoro.reset_angle(0)
 #    }
 
 x=['F', 'F', 'L', 'F', 'F', 'F', 'F', 'Rr', 'F', 'F','TD']
+kippen=motoro_left.run_angle(1000, 180)
+drehen=motoro.run_angle(1000,-90)
+drehenr=motoro.run_angle(1000,90)
+vorne=motoro_left.run_angle(1000, -180)
+
+def make_moves(x):
+    robotor=[]
+    
+    ...
 def do_moves(x):
     z=0
     if x[1]=='F':#seite 5 vorher

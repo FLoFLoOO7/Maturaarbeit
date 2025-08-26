@@ -80,7 +80,6 @@ def F(y):
     y[S1][6], y[S1][7],y[S1][8],     y[S2][8], y[S2][5], y[S2][2],     y[S3][2], y[S3][1], y[S3][0],     y[S4][8], y[S4][5], y[S4][2], y[x][0],y[x][1],y[x][2],y[x][3],y[x][5],y[x][6],  y[x][7],  y[x][8]  =         y[S2][8], y[S2][5], y[S2][2],     y[S3][2], y[S3][1], y[S3][0],     y[S4][8], y[S4][5], y[S4][2],y[S1][6], y[S1][7],y[S1][8],  y[x][2],y[x][5],y[x][8],y[x][1],y[x][7],y[x][0],y[x][3],y[x][6]
     
     return y
-
 def B(y):
     S1=1
     S2=5
@@ -138,7 +137,6 @@ def Fr(y):
     y[S2][8], y[S2][5], y[S2][2],     y[S3][2], y[S3][1], y[S3][0],     y[S4][8], y[S4][5], y[S4][2],y[S1][6], y[S1][7],y[S1][8],=y[S1][6], y[S1][7],y[S1][8],     y[S2][8], y[S2][5], y[S2][2],     y[S3][2], y[S3][1], y[S3][0],     y[S4][8], y[S4][5], y[S4][2]  
     
     return y
-
 def Br(y):
     S1=1
     S2=5
@@ -727,7 +725,7 @@ def kreuz_V4(x):
     return all_moves
 
             
-def kreuz_V4(x):
+def kreuz_V5(x):
     executed = []
     counter = 0
 
