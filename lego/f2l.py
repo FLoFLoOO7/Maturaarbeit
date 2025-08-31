@@ -15,20 +15,20 @@ eck = {
     (2,6): ((1,0),(5,0)),
     (2,8): ((4,6),(1,2)),
     
-    (3,0): ((0,6),(5,8)),
+    (3,0): ((5,8),(0,6)),
     (3,2): ((0,8),(4,2)),
     (3,6): ((2,0),(5,6)),
-    (3,8): ((2,2),(4,0)),
+    (3,8): ((4,0),(2,2)),
 
     (4,0): ((2,2),(3,8)),
-    (4,2): ((0,8),(3,2)),
+    (4,2): ((3,2),(0,8)),
     (4,6): ((1,2),(2,8)),
     (4,8): ((0,2),(1,8)),
 
-    (5,0): ((1,0),(2,6)),
-    (5,2): ((0,0),(1,6)),
-    (5,6): ((2,0),(3,6)),
-    (5,8): ((0,6),(3,0)),
+    (5,0): ((2,6),(1,0)),
+    (5,2): ((1,6),(0,0)),
+    (5,6): ((3,6),(2,0)),
+    (5,8): ((3,0),(0,6)),
 }
 moves_eck0 = {
     ((0,0),(5,2),(1,6)): [],
@@ -46,20 +46,20 @@ moves_eck0 = {
     ((2,6),(1,0),(5,0)): ['Rr','B','R','D','B','B','Dr'],
     ((2,8),(4,6),(1,2)): ['B','Rr','B','R','D','B','B','Dr'],
     
-    ((3,0),(0,6),(5,8)): ['R','Br','Rr','Br','Rr','Br','R'],
+    ((3,0),(5,8),(0,6)): ['R','Br','Rr','Br','Rr','Br','R'],
     ((3,2),(0,8),(4,2)): ['Lr','B','L','B','B','D','B','Dr'],
     ((3,6),(2,0),(5,6)): ['Br','Rr','Br','R'],
-    ((3,8),(2,2),(4,0)): ['B','B','Rr','Br','R'],
+    ((3,8),(4,0),(2,2)): ['B','B','Rr','Br','R'],
 
     ((4,0),(2,2),(3,8)): ['B','B','Rr','Dr','R'],
-    ((4,2),(0,8),(3,2)): ['U','Br','Ur','B','B','Rr','Dr','R'],
+    ((4,2),(3,2),(0,8)): ['U','Br','Ur','B','B','Rr','Dr','R'],
     ((4,6),(1,2),(2,8)): ['B','D','B','Dr'],
     ((4,8),(0,2),(1,8)): ['L','B','Lr','D','B','Dr'],
 
-    ((5,0),(1,0),(2,6)): ['Rr','Dr','R'],
-    ((5,2),(0,0),(1,6)): ['Rr','Br','R','B','Rr','Br'],
-    ((5,6),(2,0),(3,6)): ['Br','D','B','Dr'],
-    ((5,8),(0,6),(3,0)): ['R','B','Rr','D','B','Dr'],
+    ((5,0),(2,6),(1,0)): ['Rr','Dr','R'],
+    ((5,2),(1,6),(0,0)): ['Rr','Br','R','B','Rr','Br'],
+    ((5,6),(3,6),(2,0)): ['Br','D','B','Dr'],
+    ((5,8),(3,0),(0,6)): ['R','B','Rr','D','B','Dr'],
 }
 moves_eck1 = {
     
@@ -76,19 +76,19 @@ moves_eck1 = {
     ((2,6),(1,0),(5,0)): ['Br','Dr','Rr','B','B','R','D'],
     ((2,8),(4,6),(1,2)): ['Dr','Rr','B','B','R','D'],
     
-    ((3,0),(0,6),(5,8)): ['R','Br','Rr','B','B','Dr','Br','D'],
+    ((3,0),(5,8),(0,6)): ['R','Br','Rr','B','B','Dr','Br','D'],
     ((3,2),(0,8),(4,2)): ['Lr','B','L','B','L','B','Lr'],
     ((3,6),(2,0),(5,6)): ['B','B','Dr','Br','D'],
-    ((3,8),(2,2),(4,0)): ['B','L','B','Lr'],
+    ((3,8),(4,0),(2,2)): ['B','L','B','Lr'],
 
     ((4,0),(2,2),(3,8)): ['B','Dr','Br','D'],
-    ((4,2),(0,8),(3,2)): ['U','Br','Ur','B','Dr','Br','D'],
+    ((4,2),(3,2),(0,8)): ['U','Br','Ur','B','Dr','Br','D'],
     ((4,6),(1,2),(2,8)): ['L','B','Lr'],
     ((4,8),(0,2),(1,8)): ['L','B','Lr','Br','L','B','Lr'],
 
-    ((5,0),(1,0),(2,6)): ['Br','Dr','Br','D'],
-    ((5,6),(2,0),(3,6)): ['B','B','L','B','Lr'],
-    ((5,8),(0,6),(3,0)): ['R','B','B','Rr','L','B','Lr'],
+    ((5,0),(2,6),(1,0)): ['Br','Dr','Br','D'],
+    ((5,6),(3,6),(2,0)): ['B','B','L','B','Lr'],
+    ((5,8),(3,0),(0,6)): ['R','B','B','Rr','L','B','Lr'],
 }
 moves_eck2 = {
     
@@ -103,18 +103,18 @@ moves_eck2 = {
     ((2,6),(1,0),(5,0)): ['B','B','Lr','Dr','B','B','D','Lr'],
     ((2,8),(4,6),(1,2)): ['Br','Lr','Dr','B','B','D','Lr'],
     
-    ((3,0),(0,6),(5,8)): ['R','B','Lr','Br','L'],
+    ((3,0),(5,8),(0,6)): ['R','B','Lr','Br','L'],
     ((3,2),(0,8),(4,2)): ['Lr','Br','L','B','U','B','Ur'],
     ((3,6),(2,0),(5,6)): ['B','Lr','Br','L'],
-    ((3,8),(2,2),(4,0)): ['U','B','Ur'],
+    ((3,8),(4,0),(2,2)): ['U','B','Ur'],
 
     ((4,0),(2,2),(3,8)): ['Lr','Br','L'],
-    ((4,2),(0,8),(3,2)): ['Lr','Br','L','B','Lr','Br','L'],
+    ((4,2),(3,2),(0,8)): ['Lr','Br','L','B','Lr','Br','L'],
     ((4,6),(1,2),(2,8)): ['Br','U','B','Ur'],
 
-    ((5,0),(1,0),(2,6)): ['B','B','Lr','Br','L'],
-    ((5,6),(2,0),(3,6)): ['B','Lr','Br','L'],
-    ((5,8),(0,6),(3,0)): ['R','B','Rr','U','B','Ur'],
+    ((5,0),(2,6),(1,0)): ['B','B','Lr','Br','L'],
+    ((5,6),(3,6),(2,0)): ['B','Lr','Br','L'],
+    ((5,8),(3,0),(0,6)): ['R','B','Rr','U','B','Ur'],
 }
 moves_eck3 = {
     
@@ -130,13 +130,13 @@ moves_eck3 = {
     
     ((3,2),(0,8),(4,2)): ['R','Br','Rr','Ur','Br','U'],
     ((3,6),(2,0),(5,6)): ['Ur','Br','U'],
-    ((3,8),(2,2),(4,0)): ['Br','R','B','Rr'],
+    ((3,8),(4,0),(2,2)): ['Br','R','B','Rr'],
 
     ((4,0),(2,2),(3,8)): ['Br','Ur','Br','U'],
     ((4,6),(1,2),(2,8)): ['B','B','Ur','Br','U'],
 
-    ((5,0),(1,0),(2,6)): ['B','Ur','Br','U'],
-    ((5,6),(2,0),(3,6)): ['R','B','Rr'],
+    ((5,0),(2,6),(1,0)): ['B','Ur','Br','U'],
+    ((5,6),(3,6),(2,0)): ['R','B','Rr'],
 }
 
 kanten_f={
@@ -319,10 +319,8 @@ def ecken_f2l(x):
     executed = []
     counter = 0
 
-    # Mittelsteinfarben der vier Seiten: vorne, rechts, links, hinten
     farben = [x[1][4], x[5][4], x[4][4], x[3][4]]
 
-    # Mapping von Zugstrings zu deinen Funktionsnamen
     move_map = {
         "F": F, "Fr": Fr,
         "R": R, "Rr": Rr,
@@ -334,50 +332,39 @@ def ecken_f2l(x):
 
     while counter < 4:
         ecken = all_ecken(x)
+        print(f"çççççççç{ecken}")
         Ziel = [None, None, None, None]
-        print(ecken)
         for ecke in ecken:
             farbenpaar = {x[ecke[1][0]][ecke[1][1]], x[ecke[2][0]][ecke[2][1]]}
-            if farbenpaar == {farben[0], farben[1]}:
+            if farbenpaar == {farben[0], farben[1]} :
                 Ziel[0] = ecke
-            elif farbenpaar == {farben[0], farben[2]}:
+            elif farbenpaar == {farben[0], farben[2]} :
                 Ziel[1] = ecke
-            elif farbenpaar == {farben[2], farben[3]}:
+            elif farbenpaar == {farben[2], farben[3]} :
                 Ziel[2] = ecke
-            elif farbenpaar == {farben[3], farben[0]}:
+            elif farbenpaar == {farben[3], farben[1]}:
                 Ziel[3] = ecke
+            
 
-        # Ziel-Zuweisung auf Basis der farbigen Seite
-        #for ecke in ecken:
-        #    ziel_farbe = [x[ecke[1][0]][ecke[1][1]],x[ecke[2][0]][ecke[2][1]]]
-        #    if ziel_farbe[0] == farben[0] and ziel_farbe[1] == farben[1] :
-        #        Ziel[0] = ecke
-        #    elif ziel_farbe[0] == farben[0] and ziel_farbe[1] == farben[2]:
-        #        Ziel[1] = ecke
-        #    elif ziel_farbe[0] == farben[2] and ziel_farbe[1] == farben[3]:
-        #        Ziel[2] = ecke
-        #    elif ziel_farbe[0] == farben[3] and ziel_farbe[1] == farben[0]:
-        #        Ziel[3] = ecke
-        print(Ziel)
+        
+        print(f"++++{Ziel}")
 
-        # Wenn keine Kante für das aktuelle Ziel vorhanden ist, skip
+
         if Ziel[counter] is None:
             counter += 1
             continue
-
+        
         kante = Ziel[counter]
-
-        # Prüfen, ob Kante korrekt platziert ist
+        print(f"*********3{kante}")
         if (
-            kante[0][0] == 0 and  # Weiße Seite liegt oben
-            x[kante[0][0]][kante[0][1]] == x[0][4] and  # wirklich weiß
-            x[kante[1][0]][kante[1][1]] == farben[counter]  # farbige Seite stimmt
+            kante[0][0]== 0 and 
+            x[kante[0][0]][kante[0][1]] == x[0][4] and  
+            x[kante[1][0]][kante[1][1]] == farben[counter]  
         ):
             counter += 1
             continue
         print(kante)
 
-        # Richtige Map-Funktion auswählen
         if counter == 0:
             moves = moves_eck0[kante]
         elif counter == 1:
@@ -386,14 +373,15 @@ def ecken_f2l(x):
             moves = moves_eck2[kante]
         elif counter == 3:
             moves = moves_eck3[kante]
-        
-        # Züge ausführen
+        executed.extend(moves)
         for move in moves:
             x=move_map[move](x)
-        executed += moves
+        
         counter += 1
-
+    print(executed)
     return executed,x
+
+
 x=[
 ['Blu', 'Gel', 'Blu', 'Blu', 'Gel', 'Blu', 'Blu', 'Gel', 'Blu'], 
 ['Wei', 'Gre', 'Wei', 'Wei', 'Gre', 'Wei', 'Wei', 'Gre', 'Wei'], 
@@ -406,4 +394,3 @@ x=[
 
 Ecken=[((3, 0), (0, 6), (5, 8)), ((3, 2), (0, 8), (4, 2)), ((3, 6), (2, 0), (5, 6)), ((3, 8), (2, 2), (4, 0))]
 ecken_f2l(x)
-print(x)
